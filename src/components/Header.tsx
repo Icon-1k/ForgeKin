@@ -25,11 +25,12 @@ const Header: React.FC = () => {
       <nav style={{ display: 'flex', gap: 18, color: '#666', marginLeft: 'auto', alignItems: 'center' }}>
         <a href="#" style={{ textDecoration: 'none', color: '#666' }}>About</a>
         <a href="#" style={{ textDecoration: 'none', color: '#666' }}>Hire Talent</a>
-        <a href="#" style={{ textDecoration: 'none', color: ACCENT, fontWeight: 700 }}>Find Jobs</a>
+        <a href="#" style={{ textDecoration: 'none', color: ACCENT, fontWeight: 700, marginRight: 10 }}>Find Jobs</a>
+        <a href="#" onClick={() => navigate('/login')} style={{ textDecoration: 'none', color: '#666' }}>Login</a>
 
         {/* Avatar / user area */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginLeft: 18 }}>
-          
+
           <button
             onClick={() => { navigate('/signup'); }}
             style={{

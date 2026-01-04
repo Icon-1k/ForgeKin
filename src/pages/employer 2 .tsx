@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Header from '../components/Header';
 import CenterCard from '../components/CenterCard';
-import Employer2Card from '../components/cards/Employer2Card';
+import Header from '../components/Header';
+import EmployerSetPasswordCard from '../components/cards/EmployerSetPasswordCard';
 
 // Constants
 const accent = "#FFBB2E";
 const primaryText = "#232323";
 const mutedText = "#9B9B9B";
 
-function Stepper({ step }: { step: number } ) {
+function Stepper({ step }: { step: number }) {
   const steps = [
     { label: "Account Info" },
     { label: "Personal Info" },
@@ -35,14 +35,14 @@ function Stepper({ step }: { step: number } ) {
                 borderRadius: "50%",
                 background:
                   idx < step ? accent :
-                  idx === step ? "#232323" : "#fff",
+                    idx === step ? "#232323" : "#fff",
                 border:
                   idx < step ? `2px solid ${accent}` :
-                  idx === step ? `2px solid #232323` :
-                  `2px solid #E5E5E5`,
+                    idx === step ? `2px solid #232323` :
+                      `2px solid #E5E5E5`,
                 color:
                   idx < step ? "#fff" :
-                  idx === step ? "#fff" : primaryText,
+                    idx === step ? "#fff" : primaryText,
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -100,9 +100,9 @@ export default function ForgeKinEmployerSignup() {
         padding={'36px 39px 22px 39px'}
         borderRadius={17}
         boxShadow={'0 2.5px 10px #0001'}
-        employerContent={<Employer2Card />}
+        employerContent={<EmployerSetPasswordCard />}
       />
-      
+
       {/* Footer */}
       <div style={{ marginTop: 45, paddingBottom: 15, color: mutedText, fontSize: 15 }}>
         <div style={{

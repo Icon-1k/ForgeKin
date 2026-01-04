@@ -1,8 +1,8 @@
-import { useState, useRef, useEffect } from "react";
-import Header from '../components/Header';
-import CenterCard from '../components/CenterCard';
-import Employer1Card from '../components/cards/Employer1Card';
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import CenterCard from '../components/CenterCard';
+import Header from '../components/Header';
+import EmployerAccountInfoCard from '../components/cards/EmployerAccountInfoCard';
 
 // Color constants
 const accent = "#FFBB2E";
@@ -73,7 +73,7 @@ export default function ForgeKinEmployerSignupDropdown() {
 				padding={'32px'}
 				borderRadius={12}
 				boxShadow={'0 6px 20px rgba(0,0,0,0.04)'}
-				employerContent={<Employer1Card />}
+				employerContent={<EmployerAccountInfoCard />}
 			/>
 
 			<footer style={{ marginTop: 40, padding: '24px 0', textAlign: 'center', color: mutedText }}>

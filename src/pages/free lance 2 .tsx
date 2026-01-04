@@ -1,7 +1,7 @@
 import React from "react";
-import Header from '../components/Header';
 import CenterCard from '../components/CenterCard';
-import Freelance2Card from '../components/cards/Freelance2Card';
+import Header from '../components/Header';
+import FreelanceAccountInfoCard from '../components/cards/FreelanceAccountInfoCard';
 
 // Colors
 const accent = "#FFBB2E";
@@ -38,20 +38,20 @@ function Stepper({ step }: { step: number }) {
                   idx < step
                     ? "#1BC800"
                     : idx === step
-                    ? "#FFBB2E"
-                    : "#232323",
+                      ? "#FFBB2E"
+                      : "#232323",
                 border:
                   idx < step
                     ? "2px solid #1BC800"
                     : idx === step
-                    ? `2px solid ${accent}`
-                    : `2px solid ${primaryText}`,
+                      ? `2px solid ${accent}`
+                      : `2px solid ${primaryText}`,
                 color:
                   idx < step
                     ? "#fff"
                     : idx === step
-                    ? "#fff"
-                    : "#fff",
+                      ? "#fff"
+                      : "#fff",
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -63,7 +63,7 @@ function Stepper({ step }: { step: number }) {
               {idx < step ? (
                 // checkmark
                 <svg width="18" height="18" fill="none" viewBox="0 0 18 18">
-                  <path d="M4 9.5l4.5 4.5 5-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M4 9.5l4.5 4.5 5-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               ) : (
                 idx + 1
@@ -102,39 +102,39 @@ function Stepper({ step }: { step: number }) {
 // Avatars that overlap
 function ExampleAvatars() {
   return (
-    <div style={{position:"absolute",right:65,top:125,display:"flex",gap:0}}>
+    <div style={{ position: "absolute", right: 65, top: 125, display: "flex", gap: 0 }}>
       <div
         style={{
-          width:36,
-          height:36,
-          background:" #825AF8",
-          borderRadius:"50%",
-          display:"flex",
-          alignItems:"center",
-          justifyContent:"center",
-          color:"#fff",
-          fontWeight:700,
-          fontSize:18,
-          boxShadow:"0 2px 10px #0005",
-          border:"3px solid #fff",
-          zIndex:2
+          width: 36,
+          height: 36,
+          background: " #825AF8",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#fff",
+          fontWeight: 700,
+          fontSize: 18,
+          boxShadow: "0 2px 10px #0005",
+          border: "3px solid #fff",
+          zIndex: 2
         }}
       >A</div>
       <div
         style={{
-          width:36,
-          height:36,
-          background:"#16C87F",
-          borderRadius:"50%",
-          display:"flex",
-          alignItems:"center",
-          justifyContent:"center",
-          color:"#fff",
-          fontWeight:700,
-          fontSize:18,
-          marginLeft:-10,
-          boxShadow:"0 2px 10px #0005",
-          border:"3px solid #fff"
+          width: 36,
+          height: 36,
+          background: "#16C87F",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#fff",
+          fontWeight: 700,
+          fontSize: 18,
+          marginLeft: -10,
+          boxShadow: "0 2px 10px #0005",
+          border: "3px solid #fff"
         }}
       >M</div>
     </div>
@@ -151,7 +151,7 @@ export default function ForgeKinAccountForm() {
         maxWidth={700}
         padding="38px 52px 50px 52px"
         style={{ boxShadow: '0 3px 8px #0001', minHeight: 400 }}
-        freelanceContent={<Freelance2Card />}
+        freelanceContent={<FreelanceAccountInfoCard />}
       />
 
       {/* Footer */}
